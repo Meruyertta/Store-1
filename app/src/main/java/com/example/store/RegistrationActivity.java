@@ -26,7 +26,6 @@ public class RegistrationActivity extends AppCompatActivity {
     TextView signIn;
     FirebaseAuth auth;
     FirebaseDatabase database;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +53,8 @@ public class RegistrationActivity extends AppCompatActivity {
         });
 
     }
+
+
 
     private void createUser(){
         String userName=name.getText().toString();

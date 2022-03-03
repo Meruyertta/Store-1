@@ -5,7 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/fragment_container">
+    android:id="@+id/fragment_container"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/tool_bar"
+            app:titleTextColor="@color/purple_my"
+            android:theme="@style/ToolbarColored"/>
+
+    </LinearLayout>
 
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/bottom_nav"
@@ -16,5 +30,7 @@
         android:elevation="16dp"
         android:padding="8dp"
         app:cnb_menuResource="@menu/menu_button" />
+
+
 
 </RelativeLayout>
